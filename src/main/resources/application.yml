@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: stream_rabbitMq
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: rabbitmq
+    password: rabbitmq
+    virtual-host: /
+server:
+  port: 8080
+  compression:
+    enabled: true
+    min-response-size: 1024
+  http2:
+    enabled: true
